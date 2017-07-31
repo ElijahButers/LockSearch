@@ -59,13 +59,7 @@ class LockScreenViewController: UIViewController {
 
   override func viewDidAppear(_ animated: Bool) {
     
-    let scale = UIViewPropertyAnimator(duration: 0.33, curve: .easeIn)
-    scale.addAnimations {
-      self.tableView.alpha = 1.0
-    }
-    scale.addAnimations ({
-      self.tableView.transform = CGAffineTransform.identity
-    }, delayFactor: 0.33)
+    AnimatorFactory.scaleUp(view: tableView).startAnimation()
   }
 
   func toggleBlur(_ blurred: Bool) {
