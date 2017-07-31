@@ -10,4 +10,7 @@ import UIKit
 
 class AnimatorFactory {
   
+  static func scaleUp(view: UIView) -> UIViewPropertyAnimator {
+    
+  }
 }
