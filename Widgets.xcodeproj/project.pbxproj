@@ -17,9 +17,9 @@
 		9C9E23F81DAD251B004749FD /* LockScreenViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9C9E23F71DAD251B004749FD /* LockScreenViewController.swift */; };
 		9C9E23FB1DAD251B004749FD /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 9C9E23F91DAD251B004749FD /* Main.storyboard */; };
 		9C9E24001DAD251B004749FD /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 9C9E23FE1DAD251B004749FD /* LaunchScreen.storyboard */; };
-		9CF2B15E1DB389EC00E486B5 /* AnimatorFactory.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9CF2B15D1DB389EC00E486B5 /* AnimatorFactory.swift */; };
 		9CF4C0F11DAE5D0900F4E30A /* SettingsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9CF4C0F01DAE5D0900F4E30A /* SettingsViewController.swift */; };
 		9CF4C0F51DAE912000F4E30A /* FooterCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9CF4C0F41DAE912000F4E30A /* FooterCell.swift */; };
+		E2842E9D1F2F80490029CC10 /* AnimatorFactory.swift in Sources */ = {isa = PBXBuildFile; fileRef = E2842E9C1F2F80490029CC10 /* AnimatorFactory.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -35,9 +35,9 @@
 		9C9E23FA1DAD251B004749FD /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		9C9E23FF1DAD251B004749FD /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		9C9E24011DAD251B004749FD /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		9CF2B15D1DB389EC00E486B5 /* AnimatorFactory.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AnimatorFactory.swift; sourceTree = "<group>"; };
 		9CF4C0F01DAE5D0900F4E30A /* SettingsViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SettingsViewController.swift; sourceTree = "<group>"; };
 		9CF4C0F41DAE912000F4E30A /* FooterCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FooterCell.swift; sourceTree = "<group>"; };
+		E2842E9C1F2F80490029CC10 /* AnimatorFactory.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = AnimatorFactory.swift; path = ../AnimatorFactory.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -106,7 +106,6 @@
 				9CF8DFCB1DAFBD8100060AC5 /* Lock Screen View Controller */,
 				9C3A2E351DAFBDEC00384C68 /* Settings View Controller */,
 				9C9E23F51DAD251B004749FD /* AppDelegate.swift */,
-				9CF2B15D1DB389EC00E486B5 /* AnimatorFactory.swift */,
 			);
 			name = Widgets;
 			path = LockSearch;
@@ -119,6 +118,7 @@
 				9C9E23F71DAD251B004749FD /* LockScreenViewController.swift */,
 				9CF4C0F41DAE912000F4E30A /* FooterCell.swift */,
 				9C7446761DB2995E0075364A /* WidgetsOwnerProtocol.swift */,
+				E2842E9C1F2F80490029CC10 /* AnimatorFactory.swift */,
 			);
 			name = "Lock Screen View Controller";
 			sourceTree = "<group>";
@@ -195,8 +195,8 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				E2842E9D1F2F80490029CC10 /* AnimatorFactory.swift in Sources */,
 				9CF4C0F11DAE5D0900F4E30A /* SettingsViewController.swift in Sources */,
-				9CF2B15E1DB389EC00E486B5 /* AnimatorFactory.swift in Sources */,
 				9C7446771DB2995E0075364A /* WidgetsOwnerProtocol.swift in Sources */,
 				9CF4C0F51DAE912000F4E30A /* FooterCell.swift in Sources */,
 				9C125E081DAEEFBF00E352C1 /* IconCell.swift in Sources */,
