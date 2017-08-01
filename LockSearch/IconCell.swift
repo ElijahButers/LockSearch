@@ -33,6 +33,6 @@ class IconCell: UICollectionViewCell {
       return
     }
 
-    animator = AnimatorFactory.jiggle(view: icon)
+    //animator = AnimatorFactory.jiggle(view: icon)
   }
 }

@@ -86,12 +86,12 @@ class LockScreenViewController: UIViewController {
 extension LockScreenViewController: UISearchBarDelegate {
   
   func searchBarTextDidBeginEditing(_ searchBar: UISearchBar) {
-    code
+    toggleBlur(true)
   }
   
   func searchBarTextDidEndEditing(_ searchBar: UISearchBar) {
-    <#code#>
-  }
+    toggleBlur(false)
+  } 
 }
 
 extension LockScreenViewController: WidgetsOwnerProtocol { }
