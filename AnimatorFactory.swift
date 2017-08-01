@@ -24,4 +24,8 @@ class AnimatorFactory {
     }
     return scale
   }
+  
+  static func jiggle(view: UIView) -> UIViewPropertyAnimator {
+    
+  }
 }
