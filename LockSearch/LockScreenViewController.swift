@@ -85,6 +85,13 @@ class LockScreenViewController: UIViewController {
 
 extension LockScreenViewController: UISearchBarDelegate {
   
+  func searchBarTextDidBeginEditing(_ searchBar: UISearchBar) {
+    code
+  }
+  
+  func searchBarTextDidEndEditing(_ searchBar: UISearchBar) {
+    <#code#>
+  }
 }
 
 extension LockScreenViewController: WidgetsOwnerProtocol { }
