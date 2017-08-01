@@ -94,11 +94,13 @@ extension LockScreenViewController: UISearchBarDelegate {
   }
   
   func searchBarResultsListButtonClicked(_ searchBar: UISearchBar) {
-    <#code#>
+    searchBar.resignFirstResponder()
   }
   
   func searchBar(_ searchBar: UISearchBar, textDidChange searchText: String) {
-    <#code#>
+    if searchText.isEmpty {
+      searchBar.resignFirstResponder()
+    }
   }
 }
 
