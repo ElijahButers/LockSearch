@@ -41,6 +41,7 @@ class AnimatorFactory {
       }, completion: nil
       )
     }, completion: {_ in
+      view.transform = .identity
     }
     )
   }
