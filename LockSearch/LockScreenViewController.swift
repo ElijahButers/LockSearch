@@ -83,6 +83,10 @@ class LockScreenViewController: UIViewController {
   
 }
 
+extension LockScreenViewController: UISearchBarDelegate {
+  
+}
+
 extension LockScreenViewController: WidgetsOwnerProtocol { }
 
 extension LockScreenViewController: UITableViewDataSource {
