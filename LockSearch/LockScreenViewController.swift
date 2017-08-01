@@ -91,7 +91,15 @@ extension LockScreenViewController: UISearchBarDelegate {
   
   func searchBarTextDidEndEditing(_ searchBar: UISearchBar) {
     toggleBlur(false)
-  } 
+  }
+  
+  func searchBarResultsListButtonClicked(_ searchBar: UISearchBar) {
+    <#code#>
+  }
+  
+  func searchBar(_ searchBar: UISearchBar, textDidChange searchText: String) {
+    <#code#>
+  }
 }
 
 extension LockScreenViewController: WidgetsOwnerProtocol { }
