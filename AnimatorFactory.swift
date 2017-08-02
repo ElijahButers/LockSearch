@@ -25,6 +25,7 @@ class AnimatorFactory {
     return scale
   }
   
+  @discardableResult
   static func jiggle(view: UIView) -> UIViewPropertyAnimator {
     return UIViewPropertyAnimator.runningPropertyAnimator(withDuration: 0.33, delay: 0, animations: {
       
