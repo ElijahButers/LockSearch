@@ -96,6 +96,8 @@ extension WidgetView: UICollectionViewDataSource {
 
 extension WidgetView: UICollectionViewDelegate {
   func collectionView(_ collectionView: UICollectionView, didSelectItemAt indexPath: IndexPath) {
-    
+    if let cell = collectionView.cellForItem(at: indexPath) as? IconCell {
+      cell.iconJiggle()
+    }
   }
 }
