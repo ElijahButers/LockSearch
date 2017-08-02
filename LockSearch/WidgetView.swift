@@ -95,5 +95,7 @@ extension WidgetView: UICollectionViewDataSource {
 }
 
 extension WidgetView: UICollectionViewDelegate {
-  
+  func collectionView(_ collectionView: UICollectionView, didSelectItemAt indexPath: IndexPath) {
+    
+  }
 }
