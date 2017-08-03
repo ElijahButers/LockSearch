@@ -68,7 +68,9 @@ class LockScreenViewController: UIViewController {
   
   func blurAnimations(_ blurred: Bool) -> () -> Void {
     return {
-      
+      self.blurView.effect = blurred ? UIBlurEffect(style: .dark) : nil
+      self.tableView.transform = blurred ? CGAffineTransform(scaleX: 0.75, y: 0.75) : .identity
+      self.tableView.alpha = blurred ? 0.33 : 1.0
     }
   }
 
