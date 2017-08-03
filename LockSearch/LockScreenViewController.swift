@@ -65,6 +65,12 @@ class LockScreenViewController: UIViewController {
   func toggleBlur(_ blurred: Bool) {
     AnimatorFactory.fade(view: blurView, visible: blurred)
   }
+  
+  func blurAnimations(_ blurred: Bool) -> () -> Void {
+    return {
+      
+    }
+  }
 
   override var preferredStatusBarStyle: UIStatusBarStyle {
     return .lightContent
