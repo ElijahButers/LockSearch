@@ -61,7 +61,7 @@ class LockScreenViewController: UIViewController {
   }
 
   func toggleBlur(_ blurred: Bool) {
-    AnimatorFactory.fade(view: blurView, visible: blurred)
+    UIViewPropertyAnimator(duration: 0.55, curve: .easeOut, animations: blurAnimations(blurred)).startAnimation()
   }
   
   func blurAnimations(_ blurred: Bool) -> () -> Void {
