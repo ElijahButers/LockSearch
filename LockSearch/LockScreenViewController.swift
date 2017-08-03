@@ -38,8 +38,6 @@ class LockScreenViewController: UIViewController {
     super.viewDidLoad()
 
     view.bringSubview(toFront: searchBar)
-    blurView.effect = UIBlurEffect(style: .dark)
-    blurView.alpha = 0
     blurView.isUserInteractionEnabled = false
     view.insertSubview(blurView, belowSubview: searchBar)
 
