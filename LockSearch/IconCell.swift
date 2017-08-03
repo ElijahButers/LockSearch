@@ -29,6 +29,10 @@ class IconCell: UICollectionViewCell {
   var animator: UIViewPropertyAnimator?
 
   func iconJiggle() {
+    if let animator = animator, animator.isRunning {
+      return
+    }
+    
     AnimatorFactory.jiggle(view: icon)
   }
 }
