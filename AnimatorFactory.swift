@@ -46,4 +46,8 @@ class AnimatorFactory {
     }
     )
   }
+  
+  static func fade(view: UIView, visible: Bool) -> UIViewPropertyAnimator {
+    
+  }
 }
