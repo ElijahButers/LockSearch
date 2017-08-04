@@ -56,5 +56,13 @@ class AnimatorFactory {
   
   @discardableResult
   static func animateConstraint(view: UIView, constraint: NSLayoutConstraint, by: CGFloat) -> UIViewPropertyAnimator {
+    let spring = UISpringTimingParameters(dampingRatio: 0.2)
+    let animator = UIViewPropertyAnimator(duration: 2.0, timingParameters: spring)
     
+    animator.addAnimations {
+      constraint.constant += by
+      view.layoutIfNeeded()
+    }
+    return animator
+  }
 }
