@@ -61,7 +61,7 @@ class LockScreenViewController: UIViewController {
   }
 
   func toggleBlur(_ blurred: Bool) {
-    UIViewPropertyAnimator(duration: 0.55, curve: .easeOut, animations: blurAnimations(blurred)).startAnimation()
+    UIViewPropertyAnimator(duration: 0.55, controlPoint1: CGPoint(x: 0.57, y: -0.4), controlPoint2: CGPoint(x: 0.96, y: 0.87), animations: blurAnimations(blurred)).startAnimation()
   }
   
   func blurAnimations(_ blurred: Bool) -> () -> Void {
