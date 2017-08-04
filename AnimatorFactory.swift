@@ -53,4 +53,8 @@ class AnimatorFactory {
       view.alpha = visible ? 1 : 0
     }, completion: nil)
   }
+  
+  @discardableResult
+  static func animateConstraint(view: UIView, constraint: NSLayoutConstraint, by: CGFloat) -> UIViewPropertyAnimator {
+    
 }
