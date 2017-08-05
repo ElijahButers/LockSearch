@@ -60,6 +60,7 @@ class LockScreenViewController: UIViewController {
   override func viewDidAppear(_ animated: Bool) {
     
     AnimatorFactory.scaleUp(view: tableView).startAnimation()
+    AnimatorFactory.animateConstraint(view: view, constraint: dateTopConstraint, by: 100).startAnimation()
   }
 
   func toggleBlur(_ blurred: Bool) {
