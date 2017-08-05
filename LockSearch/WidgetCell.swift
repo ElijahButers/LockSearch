@@ -44,10 +44,12 @@ class WidgetCell: UITableViewCell {
 
     self.showsMore = !self.showsMore
 
-    self.widgetHeight.constant = self.showsMore ? 230 : 130
-    self.tableView?.reloadData()
-
-    widgetView.expanded = showsMore
-    widgetView.reload()
-  }
+    let animations = {
+      self.widgetHeight.constant = self.showsMore ? 230 : 130
+      if let tableView = self.tableView {
+        tableView.beginUpdates()
+        tableView.endUpdates()
+        tableView.layoutIfNeeded()
+    }
+    }
 }
