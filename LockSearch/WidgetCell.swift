@@ -50,13 +50,19 @@ class WidgetCell: UITableViewCell {
         tableView.beginUpdates()
         tableView.endUpdates()
         tableView.layoutIfNeeded()
-    }
+      }
     }
     
-      let spring = UISpringTimingParameters(mass: 30, stiffness: 1000, damping: 300, initialVelocity: CGVector(dx: 5, dy: 0))
-      toggleHeightAnimator = UIViewPropertyAnimator(duration: 0.0, timingParameters: spring)
-      toggleHeightAnimator?.addAnimations(animations)
-      toggleHeightAnimator?.startAnimation()
+    let textTransition = {
+      UIView.transition(with: sender, duration: 0.25, options: .transitionCrossDissolve, animations: {
+        sender.setTitle(self.showsMore ? "ShowLess" : "ShowMore", for: .normal)
+      }, completion: nil)
+    }
+    
+    let spring = UISpringTimingParameters(mass: 30, stiffness: 1000, damping: 300, initialVelocity: CGVector(dx: 5, dy: 0))
+    toggleHeightAnimator = UIViewPropertyAnimator(duration: 0.0, timingParameters: spring)
+    toggleHeightAnimator?.addAnimations(animations)
+    toggleHeightAnimator?.startAnimation()
     
     widgetView.expanded = showsMore
     widgetView.reload()
