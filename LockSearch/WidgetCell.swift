@@ -57,5 +57,8 @@ class WidgetCell: UITableViewCell {
       toggleHeightAnimator = UIViewPropertyAnimator(duration: 0.0, timingParameters: spring)
       toggleHeightAnimator?.addAnimations(animations)
       toggleHeightAnimator?.startAnimation()
+    
+    widgetView.expanded = showsMore
+    widgetView.reload()
   }
 }
