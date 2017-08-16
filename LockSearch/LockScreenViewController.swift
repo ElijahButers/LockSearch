@@ -112,7 +112,14 @@ extension LockScreenViewController: UISearchBarDelegate {
   }
 }
 
-extension LockScreenViewController: WidgetsOwnerProtocol { }
+extension LockScreenViewController: WidgetsOwnerProtocol {
+    
+    func startPreview(for forView: UIView) {
+        previewView?.removeFromSuperview()
+        previewView = forView.snapshotView(afterScreenUpdates: false)
+        view.insertSubview(previewView!, aboveSubview: blurView)
+    }
+}
 
 extension LockScreenViewController: UITableViewDataSource {
 
