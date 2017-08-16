@@ -36,6 +36,7 @@ class LockScreenViewController: UIViewController {
   var startFrame: CGRect?
   var previewView: UIView?
   var previewAnimator: UIViewPropertyAnimator?
+    let previewEffectView = IconEffectView(blur: .extraLight)
 
   override func viewDidLoad() {
     super.viewDidLoad()
