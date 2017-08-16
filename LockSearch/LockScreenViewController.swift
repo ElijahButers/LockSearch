@@ -33,6 +33,9 @@ class LockScreenViewController: UIViewController {
   let blurView = UIVisualEffectView(effect: nil)
 
   var settingsController: SettingsViewController!
+  var startFrame: CGRect?
+  var previewView: UIView?
+  var previewAnimator: UIViewPropertyAnimator?
 
   override func viewDidLoad() {
     super.viewDidLoad()
