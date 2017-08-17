@@ -122,6 +122,13 @@ extension LockScreenViewController: WidgetsOwnerProtocol {
         previewView?.frame = forView.convert(forView.bounds, to: view)
         startFrame = previewView?.frame
     }
+    
+    func addEffectView(below forView: UIView) {
+        previewEffectView.removeFromSuperview()
+        previewEffectView.frame = forView.frame
+        
+        forView.superview?.insertSubview(previewEffectView, belowSubview: forView)
+    }
 }
 
 extension LockScreenViewController: UITableViewDataSource {
