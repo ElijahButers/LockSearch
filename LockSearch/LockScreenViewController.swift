@@ -118,6 +118,9 @@ extension LockScreenViewController: WidgetsOwnerProtocol {
         previewView?.removeFromSuperview()
         previewView = forView.snapshotView(afterScreenUpdates: false)
         view.insertSubview(previewView!, aboveSubview: blurView)
+        
+        previewView?.frame = forView.convert(forView.bounds, to: view)
+        startFrame = previewView?.frame
     }
 }
 
