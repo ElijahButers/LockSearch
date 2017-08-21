@@ -31,6 +31,11 @@ class AnimatorFactory {
     view.transform = .identity
     
     let animator = UIViewPropertyAnimator(duration: 0.5, curve: .easeIn)
+    
+    animator.addAnimations {
+        blurView.effect = UIBlurEffect(style: .dark)
+        view.transform = CGAffineTransform(scaleX: 1.5, y: 1.5)
+    }
     return animator
   }
   
