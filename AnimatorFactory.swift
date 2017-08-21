@@ -36,6 +36,10 @@ class AnimatorFactory {
         blurView.effect = UIBlurEffect(style: .dark)
         view.transform = CGAffineTransform(scaleX: 1.5, y: 1.5)
     }
+    
+    animator.addCompletion { _ in
+        blurView.effect = UIBlurEffect(style: .dark)
+    }
     return animator
   }
   
