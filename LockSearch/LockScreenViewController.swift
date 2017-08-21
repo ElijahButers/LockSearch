@@ -122,6 +122,8 @@ extension LockScreenViewController: WidgetsOwnerProtocol {
         previewView?.frame = forView.convert(forView.bounds, to: view)
         startFrame = previewView?.frame
         addEffectView(below: previewView!)
+      
+        previewAnimator = AnimatorFactory.grow(view: previewEffectView, blurView: blurView)
     }
     
     func addEffectView(below forView: UIView) {
