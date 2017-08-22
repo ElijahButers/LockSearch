@@ -132,6 +132,10 @@ extension LockScreenViewController: WidgetsOwnerProtocol {
         
         forView.superview?.insertSubview(previewEffectView, belowSubview: forView)
     }
+    
+    func updatePreview(percent: CGFloat) {
+        previewAnimator?.fractionComplete = max(0.01, min(0.99, percent))
+    }
 }
 
 extension LockScreenViewController: UITableViewDataSource {
