@@ -138,7 +138,10 @@ extension LockScreenViewController: WidgetsOwnerProtocol {
     }
   
   func cancelPreview() {
-    <#code#>
+    if let previewAnimator = previewAnimator {
+      previewAnimator.isReversed = true
+      previewAnimator.startAnimation()
+    }
   }
 }
 
