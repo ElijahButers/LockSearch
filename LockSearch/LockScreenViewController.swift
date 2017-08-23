@@ -141,6 +141,15 @@ extension LockScreenViewController: WidgetsOwnerProtocol {
     if let previewAnimator = previewAnimator {
       previewAnimator.isReversed = true
       previewAnimator.startAnimation()
+      
+      previewAnimator.addCompletion { position in
+        switch position {
+          case .start:
+            self.previewView?.removeFromSuperview()
+            self.previewEffectView.removeFromSuperview()
+          default: break
+          }
+        }
     }
   }
 }
