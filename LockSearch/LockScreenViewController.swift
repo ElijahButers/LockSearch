@@ -136,6 +136,10 @@ extension LockScreenViewController: WidgetsOwnerProtocol {
     func updatePreview(percent: CGFloat) {
         previewAnimator?.fractionComplete = max(0.01, min(0.99, percent))
     }
+  
+  func cancelPreview() {
+    <#code#>
+  }
 }
 
 extension LockScreenViewController: UITableViewDataSource {
