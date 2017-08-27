@@ -154,6 +154,10 @@ extension LockScreenViewController: WidgetsOwnerProtocol {
   }
   
   func finishPreview() {
+    
+    previewAnimator?.stopAnimation(false)
+    previewAnimator?.finishAnimation(at: .end)
+    previewAnimator = nil
   }
 }
 
