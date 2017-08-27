@@ -152,6 +152,9 @@ extension LockScreenViewController: WidgetsOwnerProtocol {
         }
     }
   }
+  
+  func finishPreview() {
+  }
 }
 
 extension LockScreenViewController: UITableViewDataSource {
