@@ -63,6 +63,11 @@ class AnimatorFactory {
   
   static func complete(view: UIVisualEffectView) -> UIViewPropertyAnimator {
     
+    return UIViewPropertyAnimator(duration: 0.3, dampingRatio: 0.7) {
+      view.contentView.alpha = 1
+      view.transform = .identity
+      view.frame = CGRect(x: view.frame.minX - view.frame.minX/2.5, y: view.frame.maxY - 140, width: view.frame.width + 120, height: 60)
+    }
   }
   
   @discardableResult
