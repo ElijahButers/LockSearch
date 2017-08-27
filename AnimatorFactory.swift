@@ -61,6 +61,10 @@ class AnimatorFactory {
     }
   }
   
+  static func complete(view: UIVisualEffectView) -> UIViewPropertyAnimator {
+    
+  }
+  
   @discardableResult
   static func jiggle(view: UIView) -> UIViewPropertyAnimator {
     return UIViewPropertyAnimator.runningPropertyAnimator(withDuration: 0.33, delay: 0, animations: {
