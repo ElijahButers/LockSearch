@@ -158,6 +158,8 @@ extension LockScreenViewController: WidgetsOwnerProtocol {
     previewAnimator?.stopAnimation(false)
     previewAnimator?.finishAnimation(at: .end)
     previewAnimator = nil
+    
+    AnimatorFactory.complete(view: previewEffectView).startAnimation()
   }
 }
 
