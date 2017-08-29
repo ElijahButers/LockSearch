@@ -16,4 +16,13 @@ class PresentTransition: NSObject, UIViewControllerAnimatedTransitioning {
   
   func animateTransition(using transitionContext: UIViewControllerContextTransitioning) {
   }
+  
+  func transitionAnimator(using transitionContext: UIViewControllerContextTransitioning) -> UIViewImplicitlyAnimating {
+    
+    let duration = transitionDuration(using: transitionContext)
+    let container = transitionContext.containerView
+    let to = transitionContext.view(forKey: UITransitionContextViewKey.to)!
+    
+    container.addSubview(to)
+  }
 }
