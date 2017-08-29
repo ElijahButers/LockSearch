@@ -8,6 +8,6 @@
 
 import UIKit
 
-class PresentTransition: NSObject {
+class PresentTransition: NSObject, UIViewControllerAnimatedTransitioning {
   
 }
