@@ -24,5 +24,8 @@ class PresentTransition: NSObject, UIViewControllerAnimatedTransitioning {
     let to = transitionContext.view(forKey: UITransitionContextViewKey.to)!
     
     container.addSubview(to)
+    
+    to.transform = CGAffineTransform(scaleX: 1.33, y: 1.33).concatenating(CGAffineTransform(translationX: 0.0, y: 200))
+    to.alpha = 0
   }
 }
