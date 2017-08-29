@@ -19,6 +19,7 @@
 		9C9E24001DAD251B004749FD /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 9C9E23FE1DAD251B004749FD /* LaunchScreen.storyboard */; };
 		9CF4C0F11DAE5D0900F4E30A /* SettingsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9CF4C0F01DAE5D0900F4E30A /* SettingsViewController.swift */; };
 		9CF4C0F51DAE912000F4E30A /* FooterCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9CF4C0F41DAE912000F4E30A /* FooterCell.swift */; };
+		E20B90DE1F55DD0500A0FBBD /* PresentTransition.swift in Sources */ = {isa = PBXBuildFile; fileRef = E20B90DD1F55DD0500A0FBBD /* PresentTransition.swift */; };
 		E2842E9D1F2F80490029CC10 /* AnimatorFactory.swift in Sources */ = {isa = PBXBuildFile; fileRef = E2842E9C1F2F80490029CC10 /* AnimatorFactory.swift */; };
 /* End PBXBuildFile section */
 
@@ -37,6 +38,7 @@
 		9C9E24011DAD251B004749FD /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		9CF4C0F01DAE5D0900F4E30A /* SettingsViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SettingsViewController.swift; sourceTree = "<group>"; };
 		9CF4C0F41DAE912000F4E30A /* FooterCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FooterCell.swift; sourceTree = "<group>"; };
+		E20B90DD1F55DD0500A0FBBD /* PresentTransition.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = PresentTransition.swift; path = ../PresentTransition.swift; sourceTree = "<group>"; };
 		E2842E9C1F2F80490029CC10 /* AnimatorFactory.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = AnimatorFactory.swift; path = ../AnimatorFactory.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -119,6 +121,7 @@
 				9CF4C0F41DAE912000F4E30A /* FooterCell.swift */,
 				9C7446761DB2995E0075364A /* WidgetsOwnerProtocol.swift */,
 				E2842E9C1F2F80490029CC10 /* AnimatorFactory.swift */,
+				E20B90DD1F55DD0500A0FBBD /* PresentTransition.swift */,
 			);
 			name = "Lock Screen View Controller";
 			sourceTree = "<group>";
@@ -199,6 +202,7 @@
 				9CF4C0F11DAE5D0900F4E30A /* SettingsViewController.swift in Sources */,
 				9C7446771DB2995E0075364A /* WidgetsOwnerProtocol.swift in Sources */,
 				9CF4C0F51DAE912000F4E30A /* FooterCell.swift in Sources */,
+				E20B90DE1F55DD0500A0FBBD /* PresentTransition.swift in Sources */,
 				9C125E081DAEEFBF00E352C1 /* IconCell.swift in Sources */,
 				9C9E23F81DAD251B004749FD /* LockScreenViewController.swift in Sources */,
 				9C9E23F61DAD251B004749FD /* AppDelegate.swift in Sources */,
