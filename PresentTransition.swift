@@ -15,6 +15,8 @@ class PresentTransition: NSObject, UIViewControllerAnimatedTransitioning {
   }
   
   func animateTransition(using transitionContext: UIViewControllerContextTransitioning) {
+    
+    transitionAnimator(using: transitionContext).startAnimation()
   }
   
   func transitionAnimator(using transitionContext: UIViewControllerContextTransitioning) -> UIViewImplicitlyAnimating {
@@ -40,8 +42,8 @@ class PresentTransition: NSObject, UIViewControllerAnimatedTransitioning {
     
     animator.addCompletion { _ in
         transitionContext.completeTransition(!transitionContext.transitionWasCancelled)
-        
-    return animator
     }
+    
+    return animator
   }
 }
