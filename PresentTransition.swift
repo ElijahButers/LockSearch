@@ -37,5 +37,11 @@ class PresentTransition: NSObject, UIViewControllerAnimatedTransitioning {
     animator.addAnimations({
         to.alpha = 1.0
     }, delayFactor: 0.5)
+    
+    animator.addCompletion { _ in
+        transitionContext.completeTransition(!transitionContext.transitionWasCancelled)
+        
+    return animator
+    }
   }
 }
