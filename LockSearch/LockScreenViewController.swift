@@ -185,3 +185,7 @@ extension LockScreenViewController: UITableViewDataSource {
     }
   }
 }
+
+extension LockScreenViewController: UIViewControllerTransitioningDelegate {
+    
+}
