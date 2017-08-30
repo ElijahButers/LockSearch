@@ -27,5 +27,15 @@ class PresentTransition: NSObject, UIViewControllerAnimatedTransitioning {
     
     to.transform = CGAffineTransform(scaleX: 1.33, y: 1.33).concatenating(CGAffineTransform(translationX: 0.0, y: 200))
     to.alpha = 0
+    
+    let animator = UIViewPropertyAnimator(duration: duration, curve: .easeOut)
+    
+    animator.addAnimations({
+        to.transform = CGAffineTransform(translationX: 0.0, y: 100)},
+        delayFactor: 0.15)
+    
+    animator.addAnimations({
+        to.alpha = 1.0
+    }, delayFactor: 0.5)
   }
 }
