@@ -188,4 +188,7 @@ extension LockScreenViewController: UITableViewDataSource {
 
 extension LockScreenViewController: UIViewControllerTransitioningDelegate {
     
+    func animationController(forPresented presented: UIViewController, presenting: UIViewController, source: UIViewController) -> UIViewControllerAnimatedTransitioning? {
+        
+    }
 }
