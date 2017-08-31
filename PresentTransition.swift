@@ -47,6 +47,10 @@ class PresentTransition: NSObject, UIViewControllerAnimatedTransitioning {
         transitionContext.completeTransition(!transitionContext.transitionWasCancelled)
     }
     
+    if let auxAnimations = auxAnimations {
+      animator.addAnimations(auxAnimations)
+    }
+    
     return animator
   }
 }
