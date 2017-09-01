@@ -8,7 +8,7 @@
 
 import UIKit
 
-class PresentTransition: NSObject, UIViewControllerAnimatedTransitioning {
+class PresentTransition: UIPercentDrivenInteractiveTransition, UIViewControllerAnimatedTransitioning {
   
   var auxAnimations: (() -> Void)?
   var auxAnimationsCancel: (() -> Void)?
