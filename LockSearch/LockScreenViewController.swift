@@ -204,3 +204,7 @@ extension LockScreenViewController: UIViewControllerTransitioningDelegate {
     return presentTransition
   }
 }
+
+extension LockScreenViewController: UIScrollViewDelegate {
+  
+}
