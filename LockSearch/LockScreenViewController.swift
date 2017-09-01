@@ -211,4 +211,8 @@ extension LockScreenViewController: UIScrollViewDelegate {
     
     isDragging = true
   }
+  
+  func scrollViewDidScroll(_ scrollView: UIScrollView) {
+    
+  }
 }
