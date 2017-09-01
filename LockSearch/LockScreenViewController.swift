@@ -224,5 +224,10 @@ extension LockScreenViewController: UIScrollViewDelegate {
         presentSettings()
         return
     }
+    
+    if isPresentingSettings {
+        let progress = max(0.0, min(1.0, ((-scrollView.contentOffset.y) - 30) / 90.0))
+        presentTransition.update(progress)
+    }
   }
 }
