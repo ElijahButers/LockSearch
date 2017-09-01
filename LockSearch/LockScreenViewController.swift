@@ -207,4 +207,8 @@ extension LockScreenViewController: UIViewControllerTransitioningDelegate {
 
 extension LockScreenViewController: UIScrollViewDelegate {
   
+  func scrollViewWillBeginDragging(_ scrollView: UIScrollView) {
+    
+    isDragging = true
+  }
 }
