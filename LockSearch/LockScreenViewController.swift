@@ -38,6 +38,8 @@ class LockScreenViewController: UIViewController {
   var previewAnimator: UIViewPropertyAnimator?
   let previewEffectView = IconEffectView(blur: .extraLight)
   let presentTransition = PresentTransition()
+  var isDragging = false
+  var isPresentingSettings = false
 
   override func viewDidLoad() {
     super.viewDidLoad()
