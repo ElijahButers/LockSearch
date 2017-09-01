@@ -53,4 +53,9 @@ class PresentTransition: UIPercentDrivenInteractiveTransition, UIViewControllerA
     
     return animator
   }
+  
+  func interruptibleAnimator(using transitionContext: UIViewControllerContextTransitioning) -> UIViewImplicitlyAnimating {
+    
+    return transitionAnimator(using: transitionContext)
+  }
 }
