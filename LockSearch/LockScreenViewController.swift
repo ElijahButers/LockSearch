@@ -214,5 +214,15 @@ extension LockScreenViewController: UIScrollViewDelegate {
   
   func scrollViewDidScroll(_ scrollView: UIScrollView) {
     
+    guard isDragging else {
+        return
+    }
+    
+    if !isPresentingSettings && scrollView.contentOffset.y < -30 {
+        isPresentingSettings = true
+        presentTransition.wantsInteractiveStart = true
+        presentSettings()
+        return
+    }
   }
 }
