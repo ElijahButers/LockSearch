@@ -233,5 +233,15 @@ extension LockScreenViewController: UIScrollViewDelegate {
     
     func scrollViewWillEndDragging(_ scrollView: UIScrollView, withVelocity velocity: CGPoint, targetContentOffset: UnsafeMutablePointer<CGPoint>) {
         
+        let progress = max(0.0, min(1.0, ((-scrollView.contentOffset.y) - 30) / 90.0))
+        
+        if progress > 0.5 {
+            presentTransition.finish()
+        } else {
+            presentTransition.cancel()
+        }
+        
+        isPresentingSettings = false
+        isDragging = false
     }
 }
