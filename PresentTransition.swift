@@ -62,6 +62,11 @@ class PresentTransition: UIPercentDrivenInteractiveTransition, UIViewControllerA
     self.animator = animator
     self.context = transitionContext
     
+    animator.addCompletion { [unowned self] _ in
+      self.animator = nil
+      self.context = nil
+    }
+    
     return animator
   }
   
