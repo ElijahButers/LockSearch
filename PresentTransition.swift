@@ -76,6 +76,7 @@ class PresentTransition: UIPercentDrivenInteractiveTransition, UIViewControllerA
       self.context = nil
     }
     
+    animator.isUserInteractionEnabled = true
     return animator
   }
   
