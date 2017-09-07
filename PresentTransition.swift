@@ -49,6 +49,7 @@ class PresentTransition: UIPercentDrivenInteractiveTransition, UIViewControllerA
         transitionContext.completeTransition(!transitionContext.transitionWasCancelled)
       default:
         transitionContext.completeTransition(false)
+        self.auxAnimationsCancel?()
       }
     }
     
