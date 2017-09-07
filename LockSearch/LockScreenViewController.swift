@@ -182,6 +182,7 @@ extension LockScreenViewController: UITableViewDataSource {
     if indexPath.row == 1 {
       let cell = tableView.dequeueReusableCell(withIdentifier: "Footer") as! FooterCell
       cell.didPressEdit = {[unowned self] in
+        self.presentTransition.wantsInteractiveStart = false
         self.presentSettings()
       }
       return cell
