@@ -89,6 +89,7 @@ class LockScreenViewController: UIViewController {
   @IBAction func presentSettings(_ sender: Any? = nil) {
     //present the view controller
     presentTransition.auxAnimations = blurAnimations(true)
+    presentTransition.auxAnimationsCancel = blurAnimations(false)
     settingsController = storyboard?.instantiateViewController(withIdentifier: "SettingsViewController") as! SettingsViewController
     settingsController.transitioningDelegate = self
     settingsController.didDismiss = { [unowned self] in
