@@ -24,6 +24,10 @@ class PresentTransition: UIPercentDrivenInteractiveTransition, UIViewControllerA
     transitionAnimator(using: transitionContext).startAnimation()
   }
   
+  func interruptTransition() {
+    
+  }
+  
   func transitionAnimator(using transitionContext: UIViewControllerContextTransitioning) -> UIViewImplicitlyAnimating {
     
     let duration = transitionDuration(using: transitionContext)
