@@ -40,6 +40,7 @@ class LockScreenViewController: UIViewController {
   let presentTransition = PresentTransition()
   var isDragging = false
   var isPresentingSettings = false
+  var touchesStartPointY: CGFloat?
 
   override func viewDidLoad() {
     super.viewDidLoad()
