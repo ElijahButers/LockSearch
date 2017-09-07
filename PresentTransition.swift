@@ -43,8 +43,13 @@ class PresentTransition: UIPercentDrivenInteractiveTransition, UIViewControllerA
         to.alpha = 1.0
     }, delayFactor: 0.5)
     
-    animator.addCompletion { _ in
+    animator.addCompletion { position in
+      switch position {
+      case .end:
         transitionContext.completeTransition(!transitionContext.transitionWasCancelled)
+      default:
+        transitionContext.completeTransition(false)
+      }
     }
     
     if let auxAnimations = auxAnimations {
