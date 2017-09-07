@@ -59,6 +59,9 @@ class PresentTransition: UIPercentDrivenInteractiveTransition, UIViewControllerA
       animator.addAnimations(auxAnimations)
     }
     
+    self.animator = animator
+    self.context = transitionContext
+    
     return animator
   }
   
