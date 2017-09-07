@@ -100,6 +100,21 @@ class LockScreenViewController: UIViewController {
   
   override func touchesMoved(_ touches: Set<UITouch>, with event: UIEvent?) {
     
+    guard let startY = touchesStartPointY else {
+      return
+    }
+    
+    let currentPoint = touches.first!.location(in: view).y
+    if currentPoint < startY - 40 {
+      touchesStartPointY = nil
+      presentTransition.animator?.addCompletion {_ in
+        self.blurView.effect = nil
+    }
+      presentTransition.cancel()
+    } else if currentPoint > startY + 40 {
+      touchesStartPointY = nil
+      presentTransition.finish()
+    }
   }
 
   @IBAction func presentSettings(_ sender: Any? = nil) {
