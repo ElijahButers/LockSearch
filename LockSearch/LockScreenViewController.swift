@@ -97,6 +97,10 @@ class LockScreenViewController: UIViewController {
     touchesStartPointY = touches.first!.location(in: view).y
     presentTransition.interruptTransition()
   }
+  
+  override func touchesMoved(_ touches: Set<UITouch>, with event: UIEvent?) {
+    
+  }
 
   @IBAction func presentSettings(_ sender: Any? = nil) {
     //present the view controller
