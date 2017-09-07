@@ -12,6 +12,8 @@ class PresentTransition: UIPercentDrivenInteractiveTransition, UIViewControllerA
   
   var auxAnimations: (() -> Void)?
   var auxAnimationsCancel: (() -> Void)?
+  var context: UIViewControllerContextTransitioning?
+  var animator: UIViewPropertyAnimator?
   
   func transitionDuration(using transitionContext: UIViewControllerContextTransitioning?) -> TimeInterval {
     return 0.75
