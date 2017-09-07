@@ -86,6 +86,17 @@ class LockScreenViewController: UIViewController {
   override var preferredStatusBarStyle: UIStatusBarStyle {
     return .lightContent
   }
+  
+  override func touchesBegan(_ touches: Set<UITouch>, with event: UIEvent?) {
+    
+    guard presentTransition.wantsInteractiveStart == false,
+     let _ = presentTransition.animator else {
+      return
+    }
+    
+    touchesStartPointY = touches.first!.location(in: view).y
+    presentTransition.interruptTransition()
+  }
 
   @IBAction func presentSettings(_ sender: Any? = nil) {
     //present the view controller
